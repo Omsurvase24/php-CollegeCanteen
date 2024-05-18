@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 5%;
+  border-bottom: 1px solid #f9f9f9;
+}
+
+header ul {
+  display: flex;
+}
+
+header ul li {
+  list-style: none;
+  margin: 0px 10px;
+}
+
+header h2 {
+  color: #202020;
+}
+
+header ul li a {
+  color: #202020;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+header ul li i {
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+header .header-btn {
+  border: 1px solid #202020;
+  color: #202020;
+  padding: 8px 10px;
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
+}
+
+header .header-btn:hover {
+  background: #202020;
+  color: #ffffff;
+}
+
+/* Home */
+.home-banner {
+  background: url('https://img.freepik.com/free-vector/restaurant-mural-wallpaper_23-2148703851.jpg?w=2000');
+  min-height: 350px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-banner .search {
+  display: flex;
+  background: #ffffff;
+  padding: 80px 150px;
+}
+
+.home-banner .search form {
+  display: flex;
+}
+
+.home-banner .search input[type='text'] {
+  outline: none;
+  border: none;
+}
+
+.home-banner .search div {
+  border: 1px solid #202020;
+  padding: 10px 20px;
+}
+
+.home-banner .search input[type='submit'] {
+  background: #202020;
+  color: #ffffff;
+  padding: 0px 10px;
+  border: 1px solid #202020;
+  cursor: pointer;
+}
+
+.food-items-container {
+  background: #f7f7f7;
+  padding: 80px 5%;
+}
+
+.food-items-container h1 {
+  text-align: center;
+  color: #202020;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}
+
+.food-items-container .food-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.food-items .item {
+  display: flex;
+  background: #ffffff;
+  padding: 15px 30px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.food-items .item img {
+  border-radius: 10px;
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.food-items .item h3 {
+  color: #202020;
+  font-size: 16px;
+}
+
+.food-items .item p {
+  font-size: 14px;
+  font-weight: 800;
+  color: red;
+  margin: 10px 0px 2px;
+}
+
+.food-items .item span {
+  color: #2ead22;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.food-items .item input {
+  width: 35px;
+  display: block;
+  margin: 8px 0px;
+}
+
+.food-items .item input[type='submit'] {
+  background: #202020;
+  color: #ffffff;
+  padding: 8px 10px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+/* Login/ Signup */
+.auth-container {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-form {
+  width: 300px;
+  margin: auto;
+}
+
+.auth-form h1 {
+  color: #202020;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.auth-form div {
+  margin-bottom: 10px;
+}
+
+.auth-form div label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.auth-form div input[type='text'],
+.auth-form div input[type='email'],
+.auth-form div input[type='password'] {
+  border: 1px solid #202020;
+  padding: 10px;
+  width: 100%;
+}
+
+.auth-form p {
+  color: #ff5353;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.auth-form a {
+  margin-top: 15px;
+  display: block;
+  font-size: 14px;
+  color: #202020;
+  text-decoration: underline;
+}
+
+.auth-form input[type='submit'] {
+  background: #202020;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+/* Cart */
+.cart-container {
+  width: 500px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.cart-container .empty-cart-warning {
+  margin-top: 20px;
+  color: #202020;
+  font-weight: 500;
+}
+
+.empty-cart-warning a {
+  text-decoration: underline;
+}
+
+.cart-container .cart-items .item {
+  display: flex;
+  margin: 20px 0px;
+}
+
+.cart-items .item img {
+  width: 150px;
+  margin-right: 20px;
+}
+
+.cart-items .item h3 {
+  color: #202020;
+  font-size: 16px;
+}
+
+.cart-items .item p {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 3px;
+}
+
+.cart-items .item span {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #202020;
+  margin-top: 5px;
+}
+
+.cart-items .item input {
+  background: #202020;
+  color: #ffffff;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.cart-container button {
+  background: #202020;
+  color: #ffffff;
+  padding: 8px 10px;
+  margin-top: 10px;
+}
+
+.cart-container .subtotal {
+  font-size: 18px;
+  margin: 10px 0px;
+}
+
+/* Dashboard */
+.dashboard-container {
+  display: flex;
+}
+
+aside {
+  width: 220px;
+  border-right: 1px solid #e5e5e5;
+  min-height: 90.5vh;
+  margin-right: 30px;
+}
+
+aside ul {
+  padding: 0px 10px;
+}
+
+aside ul li {
+  list-style: none;
+}
+
+aside ul li {
+  margin: 10px 0px;
+  padding: 15px;
+}
+
+aside ul li a {
+  color: #202020;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Add item */
+.dashboard-add-item-container {
+  padding: 20px;
+}
+
+.dashboard-add-item-container p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #2ead22;
+}
+
+.dashboard-add-item-container h2 {
+  color: #202020;
+  margin-bottom: 20px;
+}
+
+.add-item-form div {
+  margin-bottom: 10px;
+}
+
+.add-item-form div label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.add-item-form div input[type='text'],
+.add-item-form div input[type='number'] {
+  border: 1px solid #202020;
+  padding: 8px;
+}
+
+.add-item-form div select {
+  border: 1px solid #202020;
+  padding: 8px 0px;
+}
+
+.add-item-form input[type='submit'] {
+  background: #202020;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+}
+
+/* List orders */
+.dashboard-list-order {
+  padding: 20px;
+}
+
+.dashboard-list-order h1 {
+  color: #202020;
+  margin-bottom: 20px;
+}
+
+.dashboard-list-order table th {
+  background: #202020;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.dashboard-list-order table td {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.dashboard-list-order table,
+.dashboard-list-order th,
+.dashboard-list-order td {
+  padding: 10px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+/* General dashboard */
+.general-info {
+  padding: 20px;
+  display: flex;
+}
+
+.general-info .info {
+  background: #202020;
+  height: max-content;
+  margin: 10px;
+  color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.info div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.info h2 {
+  margin-left: 10px;
+  font-size: 25px;
+}
+
+.info span {
+  font-size: 30px;
+  background: #ffffff;
+  color: #202020;
+  font-weight: 700;
+  padding: 10px 19px;
+  border-radius: 50%;
+}
+
+.profile-container {
+  width: 700px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.profile-container h1 {
+  color: #202020;
+  margin-bottom: 20px;
+}
+
+.profile-container .profile {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.profile .edit-profile {
+  position: absolute;
+  right: 0px;
+}
+
+.profile-container .profile input,
+.profile-container .profile p {
+  display: block;
+  background: none;
+  border: none;
+  font-size: 16px;
+  margin: 10px 0px;
+  outline: none;
+  padding: 10px;
+}
+
+.profile .show-input {
+  border: 1px solid #e5e5e5 !important;
+}
+
+.profile input[type='submit'] {
+  color: #ffffff;
+  padding: 8px 10px;
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
+  background: #202020;
+  border: none;
+}
+
+.profile-container table,
+.profile-container th,
+.profile-container td {
+  padding: 10px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.profile-container .orders h2 {
+  color: #202020;
+  margin-bottom: 20px;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .home-banner .search {
+    padding: 10px;
+  }
+
+  .food-items .item {
+    flex-direction: column;
+    width: 40%;
+  }
+
+  .food-items .item img {
+    width: 100%;
+  }
+
+  .food-items .item div {
+    margin-top: 20px;
+  }
+}
