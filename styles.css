@@ -1,8 +1,27 @@
 /* Basic reset */
 * {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
+}
+
+.welcome {
+    padding: 20px;
+}
+
+.welcome h1 {
+    font-size: 48px;
+}
+
+.welcome p {
+    font-size: 20px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Styling the navbar */
