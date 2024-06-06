@@ -9,11 +9,9 @@ if (!isset($_SESSION['admin_id'])) {
 include('config.php');
 include('navbar.php');
 
-// Fetch menu items
 $sql = "SELECT * FROM menu_items";
 $menu_items = mysqli_query($conn, $sql);
 
-// Fetch orders
 $sql = "SELECT o.id, s.name AS student_name, m.name AS item_name, o.quantity, o.order_date 
         FROM orders o 
         JOIN students s ON o.student_id = s.id 
@@ -54,6 +52,7 @@ $orders = mysqli_query($conn, $sql);
         <th>Item Name</th>
         <th>Quantity</th>
         <th>Order Date</th>
+        <th>Actions</th>
     </tr>
     <?php while ($order = mysqli_fetch_assoc($orders)) : ?>
         <tr>
@@ -62,8 +61,12 @@ $orders = mysqli_query($conn, $sql);
             <td><?php echo $order['item_name']; ?></td>
             <td><?php echo $order['quantity']; ?></td>
             <td><?php echo $order['order_date']; ?></td>
+            <td>
+                <form method="post" action="serve_order.php">
+                    <input type="hidden" name="order_id" value="<?php echo $order['id']; ?>">
+                    <input type="submit" value="Served">
+                </form>
+            </td>
         </tr>
     <?php endwhile; ?>
 </table>
-
-<a href="logout.php">Logout</a>
