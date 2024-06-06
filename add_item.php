@@ -23,10 +23,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<form method="post" action="">
-    Name: <input type="text" name="name" required><br>
-    Description: <textarea name="description" required></textarea><br>
-    Price: <input type="text" name="price" required><br>
-    <input type="submit" value="Add Item">
-</form>
-<a href="admin_dashboard.php">Back to Dashboard</a>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Item</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+
+<body>
+    <form method="post" action="">
+        Name: <input type="text" name="name" required><br>
+        Description: <textarea name="description" required></textarea><br>
+        Price: <input type="text" name="price" required><br>
+        <input type="submit" value="Add Item">
+    </form>
+    <a href="admin_dashboard.php">Back to Dashboard</a>
+</body>
+
+</html>
